@@ -1,0 +1,48 @@
+/* Keep identity controls visible; let navigation and the guide scroll at short heights. */
+.sidebar {overflow:hidden}
+.sidebar > .brand {flex-shrink:0}
+.sidebar-scroll {
+  display:flex;
+  flex-direction:column;
+  flex:1;
+  min-height:0;
+  overflow-y:auto;
+  overflow-x:hidden;
+  scrollbar-width:thin;
+  scrollbar-color:#d6e2d9 transparent;
+}
+.sidebar-scroll > * {flex-shrink:0}
+.sidebar-scroll::-webkit-scrollbar {width:4px}
+.sidebar-scroll::-webkit-scrollbar-thumb {background:#d6e2d9;border-radius:4px}
+.sidebar-guide {margin-bottom:16px}
+.sidebar-bottom {flex-shrink:0;margin-top:0;padding-top:16px}
+.sidebar .profile {
+  width:100%;
+  text-align:left;
+  padding:16px 5px 6px;
+  border-radius:0 0 6px 6px;
+}
+.sidebar .profile:hover {background:#f3f7f2}
+.profile-name {flex:1;min-width:0}
+.profile-name strong {display:block}
+.profile-name small {line-height:1.5}
+.sidebar .profile > svg {flex-shrink:0;color:#879b8c}
+.profile-trigger:hover {background:#dfebdf;box-shadow:0 0 0 2px #cbdccc}
+.profile-summary {display:flex;align-items:center;gap:13px;margin-bottom:22px}
+.profile-summary .avatar {width:46px;height:46px;font-size:13px}
+.profile-summary h3 {font-size:16px;font-weight:600}
+.profile-summary p {font-size:12px;color:#738674;margin-top:5px}
+.profile-details {margin:0 0 20px}
+.profile-details > div {display:flex;justify-content:space-between;gap:15px;padding:12px 0;border-bottom:1px solid var(--line)}
+.profile-details dt {font-size:12px;color:#748775}
+.profile-details dd {margin:0;font-size:12px;text-align:right;color:#3c5946}
+.coverage-detail{padding:14px 0;border-bottom:1px solid #e1e8e2}
+.coverage-detail p{margin:8px 0;line-height:1.5}
+.coverage-detail small{display:block;margin:6px 0}
+.boundary-table{max-height:360px;margin:16px 0}
+.boundary-table table{width:100%;border-collapse:collapse}
+.boundary-table th,.boundary-table td{padding:8px;border-bottom:1px solid #e1e8e2;font-size:12px}
+.boundary-table input{width:18px;height:18px}
+.coverage-cell{cursor:pointer;border:0}
+.coverage-cell.conflicted{color:#854509;background:#fff0ca;border:1px dashed #b66b13;font-weight:700}
+.coverage-cell.conflicted:focus-visible{outline:2px solid #854509;outline-offset:2px}

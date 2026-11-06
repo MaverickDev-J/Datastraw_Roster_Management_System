@@ -1,0 +1,21 @@
+[project]
+name = "datastraw-roster"
+version = "0.1.0"
+description = "Constraint-based roster planning with independent coverage validation"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+  "fastapi>=0.115,<1",
+  "uvicorn>=0.34,<1",
+  "sqlalchemy>=2.0,<3",
+  "scipy>=1.16,<2",
+]
+
+[dependency-groups]
+deploy = [
+    "modal>=1.6.3",
+]
+dev = ["httpx>=0.28,<1", "pytest>=8,<10"]
+
+[tool.pytest.ini_options]
+testpaths = ["backend/tests"]
+pythonpath = ["."]

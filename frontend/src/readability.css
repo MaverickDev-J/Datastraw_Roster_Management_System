@@ -1,0 +1,56 @@
+/* Dense operational data still needs readable labels and clear keyboard targets. */
+.page-heading p {font-size:13px;line-height:1.75}
+.stat-top > span:first-child {font-size:12px}
+.stat-card > small {font-size:11px;line-height:1.6}
+.button {font-size:12px;min-height:40px}
+.button.compact {font-size:11px;min-height:34px}
+.view-tabs button {font-size:11px}
+.search input,.filter-controls select {font-size:11px}
+.employee-label strong {font-size:12px}
+.employee-label small {font-size:10px}
+.roster-table th,.coverage-table th {font-size:12px}
+.roster-table th small,.coverage-table th small {font-size:8px}
+.roster-cell {font-size:10px}
+.legend > span,.panel-footer > small {font-size:10px}
+.status-tag {font-size:10px}
+.coverage-table .sticky-cell {font-size:12px}
+.coverage-table .sticky-cell small {font-size:10px}
+.insight-card p,.rule-card p {font-size:11px}
+.insight-card button {font-size:11px}
+.issue p {font-size:13px}
+.issue-top strong,.issue-top span {font-size:11px}
+.config-heading p,.config-tabs button,.config-records small {font-size:11px}
+.config-records strong {font-size:13px}
+.modal label,.modal > header p,.form-note {font-size:12px}
+.modal input:not([type=checkbox]),.modal select {font-size:14px}
+.history-list small {font-size:11px}
+.modal .button {min-height:44px}
+@media (min-width:761px) {
+  .nav-item {font-size:13px}
+  .breadcrumb {font-size:12px}
+  .workspace strong,.profile strong {font-size:13px}
+  .workspace small,.profile small {font-size:10px}
+}
+@media (max-width:760px) {
+  .page-heading p {font-size:12px}
+  .heading-actions .button {font-size:10px}
+  .stat-top > span:first-child {font-size:10px}
+  .stat-card > small {font-size:9px}
+  .view-tabs button {font-size:10px;padding:8px 6px}
+  .employee-label strong {font-size:11px}
+  .employee-label small {font-size:9px}
+  .legend > span,.panel-footer > small {font-size:9px}
+  .status-tag {font-size:9px}
+  .month-picker {font-size:11px}
+  .config-tabs button {font-size:10px}
+}
+@media (max-width:480px) {
+  .topbar .demo-badge {display:none}
+}
+@media (max-width:380px) {
+  .heading-actions {flex-direction:column;align-items:stretch}
+  .month-control {flex-wrap:wrap}
+  .view-tabs {overflow:auto;justify-content:flex-start}
+  .view-tabs button {flex-shrink:0}
+  .panel-footer {gap:10px}
+}

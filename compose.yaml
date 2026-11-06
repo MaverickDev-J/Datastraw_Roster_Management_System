@@ -1,0 +1,14 @@
+services:
+  roster:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: sqlite:////app/data/roster.db
+      COOKIE_SECURE: "false"
+      SOLVER_SECONDS: "10"
+    volumes:
+      - roster-data:/app/data
+    restart: unless-stopped
+volumes:
+  roster-data:

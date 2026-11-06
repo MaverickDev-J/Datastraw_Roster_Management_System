@@ -1,0 +1,100 @@
+# Local assessment, planning, rehearsal and correspondence
+/.private/
+/private/
+/plan.md
+/AI_Internship Assessment.pdf
+/docs/demo-script.md
+/docs/implementation-status.md
+/docs/qa-report.md
+
+# Credentials and machine-specific environment (keep the safe setup example)
+.env
+.env.*
+!.env.example
+.envrc
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+service-account*.json
+/.aws/
+/.ssh/
+.modal.toml
+.modal/
+
+# Installed environments, dependencies and package caches
+.venv/
+venv/
+env/
+node_modules/
+.uv-cache/
+.npm-cache/
+.pnpm-store/
+.yarn/cache/
+
+# Runtime data and SQLite sidecars; seed data lives in source code
+/data/
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+
+# Generated builds and packaging (dependency lockfiles ARE committed)
+/frontend/dist/
+/dist/
+/build/
+*.egg-info/
+*.whl
+*.tsbuildinfo
+.vite/
+
+# Python/tool/test caches and generated reports
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.tox/
+.nox/
+.cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+coverage/
+/artifacts/
+/test-results/
+/playwright-report/
+/blob-report/
+
+# Recordings, exports and temporary files
+/recordings/
+/exports/
+*.mp4
+*.webm
+*.mov
+*.log
+*.tmp
+*.temp
+*.bak
+*.orig
+*.rej
+*.swp
+*.swo
+*~
+
+# Personal editor/agent settings and operating-system metadata
+/.idea/
+/.vscode/
+/.codex/
+/.agents/
+/.claude/
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
